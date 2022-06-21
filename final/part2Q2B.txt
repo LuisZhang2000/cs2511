@@ -1,0 +1,2 @@
+Adapter pattern. The adapter pattern allows the interface of a class to be used as another interface for
+another class, so that the original source of the application does not need to be changed.

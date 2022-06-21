@@ -1,0 +1,6 @@
+Factory	Method and Abstract Factory Methods are both creational patterns.
+Factory Method allows the creation of objects without having to specify the exact class of the object,
+whereas Abstract Factory Method lets you produce FAMILIES of related objects without specifying their concrete classes.
+
+Therefore Factory Method is useful for creating one type of object while Abstract Factory Pattern is useful for creating
+families of objects.

@@ -1,0 +1,14 @@
+PART 2
+
+1a) Encapsulation is violated, there are no restrictions on how the public instance variables can be modified. Account number and balance should not
+be visible or able to be directly modified by the client.
+b) the printStatementHeader is a static method in the Account class, so it will call the method inside Account instead of SavingsAccount
+c) To make the classes immutable:
+- make accountNumber and balance private
+- add getters only (no setters) for instance variables
+- add a constructor which takes the instance variables as arguments
+
+2a) Strategy 
+*b) Visitor
+*c) Singleton
+

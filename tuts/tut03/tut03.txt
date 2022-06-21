@@ -1,0 +1,10 @@
+1. Method overriding is when a subclass reimplements a method from the superclass, but must have the same types in its, arguments
+the same return type, the same ordering of arguments and same number of arguments in the method
+
+2. You can't override a static method, there is no point because the static method is attached to its class
+
+3. quack, quack, moo, quack
+
+*4. 1 1
+    0 1
+

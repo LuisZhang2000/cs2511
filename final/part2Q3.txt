@@ -1,0 +1,5 @@
+Decorator Pattern is a structural pattern that wraps an object through class extension and allows more functionality
+to be added to an object during runtime. It prefers composition over inheritance. 
+
+Visitor pattern is a behavioural pattern that adds extra functionality to existing objects through a Visitor class
+without having to modify them (open-closed principle).

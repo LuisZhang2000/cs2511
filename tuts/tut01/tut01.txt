@@ -1,0 +1,11 @@
+QUESTIONS
+
+2. A class is a blue-print for objects with common properties. An object is an instance of a class containing concrete values in fields
+(e.g. each unique employee is an instance of the class Employee)
+
+PROGRAMMING
+
+1. IDE stands for integrated development environment. It provides code-editing, compilation, execution, debugging etc.
+
+3. Sum.java 
+

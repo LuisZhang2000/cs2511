@@ -1,0 +1,38 @@
+QUICK QUESTIONS
+
+1. The 'this' keyword refers to the current class. E.g. in the code below:
+
+public class Shape {
+    public string colour;
+    public Shape(String colour) {
+        System.out.println("Inside shape constructor");
+        this.colour = colour;
+    }
+}
+
+'this.colour' refers to the current class/object, which is the 'pubic string colour' inside the Shape class.
+
+The 'super' keyword refers to the parent class instead (while 'this' refers to the current class)
+
+2. this() is used to call the current class's constructor, super() is used to call the parent class's constructor
+
+3. A field or method of a class that is static can be accessed without an instance of the class.
+e.g. in lab 1, if the method wasn't static, you had to create an instance of Average:
+
+Average av = new Average();
+av.average(numbers);
+
+Whereas if the method was static, you could simply do:
+
+Average.average(numbers);
+
+
+ACCESS MODIFIERS
+
+1. Access modifiers (default, protected, public, private) are keywords that set the accessibility of classes, methods or other members
+e.g. for bank account class, the bank account balance should never be set to negative values
+so we should set the balance to private so the withdraw method can't set it to negative value
+
+2. In Java if you try to access a private variable, there will be a compilation error
+In Python there wouldn't be an error, so there is much stronger access control in Java
+

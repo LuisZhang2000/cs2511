@@ -1,0 +1,2 @@
+Observer pattern. The doctors and nurses (observers) responsible for the patient (subject) will be notified if the heart rate
+of the patient is out of the required range. 

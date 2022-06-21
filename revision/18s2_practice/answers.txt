@@ -1,0 +1,87 @@
+PART A
+
+1. A
+Data clumps: different parts of code contain identical groups of variables e.g. fields in many classes, parameters in many method signatures
+Large class: similar to long method, violates Single Responsibility Principle
+Long parameter list: 
+Lazy class: classes that aren't doing much to justify their existence 
+Inappropriate intimacy: excessive coupling, one class has too much knowledge of another class
+
+2. F
+Message chains: object is interacting with too many other collaborators
+
+3. C 
+
+4. 
+
+5. B
+- constructors CAN'T be overridden
+- overridden class CAN'T specify a weaker access modifier (weaker = fewer permissions, public = strongest)
+e.g. can't change overridden from public to private
+- 
+
+6. 
+- you cannot access methods on the returned object
+- you can access methods of objects passed in as parameters or instantiated within the method
+
+PART B 
+
+1a) Encapsulation is an OO design concept that emphasises hiding an object's attributes and implementation 
+Encapsulation leads to abstraction, which helps accurately represent knowledge about the problem domain and discard irrelevant information
+
+b) An object of an immutable class cannot be changed once it is created. Immutable classes are easier to design, implement 
+and are less prone to error and more secure
+
+To make an immutable class:
+- make all fields private so direct access isn't allowed
+- don't private setters
+- initialise all fields using constructor
+
+2. a) Template/strategy
+b) Observer
+
+3. a) Code smell: structures in implementation of code that lead to poor code, e.g. large methods, classes with too many responsibilities,
+complex conditional statements
+Design smell: a symptom of poor design often caused by violation of key design principles e.g. rigidity, fragility, immobility
+
+b) Divergent change: when a single class needs to be commonly changed in different ways for differnet reasons.
+It is a violation of the Single Responsiblity principle
+
+Shotgun surgery: opposite of divergent change, many different classes need little changes for a single reason
+
+4. a) Behavioural, structural, creational
+b) 
+Behavioural: concerns algorithms and the assignment of responsibilities between objects, e.g. strategy pattern
+Structural: ease the design by identifying a simple way to realise relationships among entities e.g. composite pattern
+Creational: creational patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code e.g. factory method
+
+PART C 
+
+3a) Programming by contract: an approach for designing software by creating a contract between software developer and software user
+The contract should include pre-conditions, post-conditions and invariants.
+Class invariant: What the contract maintains, the values that don't change
+
+b)
+
+4a) Duplicate code when calculating sum of each array. Use "extract method" technique to encapsulate computation of sum 
+
+public static void main(String[] args) {
+    int[] intArrayA = {1,2,3,4,5};
+    int[] intArrayB = new int[5];
+
+    int sum = computeSum(intArrayA)
+    System.out.println("Sum of ArrayA: " + sum);
+
+    sum = computeSum(intArrayB)
+    System.out.println("Sum of ArrayB: " + sum);
+}
+
+private static int computeSum(int[] array) {
+    int sum = 0;
+    for (int i=0; i< array.length; i++) {
+        sum += array[i];
+    }
+    return sum;
+}
+
+b) 

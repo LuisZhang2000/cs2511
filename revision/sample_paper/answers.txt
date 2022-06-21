@@ -1,0 +1,39 @@
+4a)
+
+// component
+public interface Product {
+    public getPrice();
+}
+
+// composite
+public class Assembly implements Product {
+    private List<Product> productList;
+    //private int price;
+
+    public Assembly() {
+        this.productList = new ArrayList<Product>();
+    }
+
+    public int getPrice() {
+        int total = 0;
+        for (Product p : productList) {
+            total += p.getPrice();
+        }
+        return total;
+    }
+
+}
+
+// leaf
+public class Item implements Product {
+
+    private int price;
+
+    public Item (int price) {
+        this.price = price;
+    }
+
+    public int getPrice() {
+        return this.price;
+    }
+}
